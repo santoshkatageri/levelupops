@@ -17,8 +17,8 @@ coverage.*
 *.coverprofile
 profile.cov
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Dependency directories
+vendor/
 
 # Go workspace file
 go.work
@@ -28,5 +28,19 @@ go.work.sum
 .env
 
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup and temp files
+*.bak
+*.tmp
