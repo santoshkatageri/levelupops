@@ -1,0 +1,40 @@
+# Binaries
+levelupops
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Build and test artifacts
+*.out
+*.test
+coverage.out
+
+# Dependency directories
+vendor/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment/config files
+.env
+.env.*
+
+# SQLite DBs
+*.db
+*.sqlite
+*.sqlite3
+
+# Misc
+*.bak
+*.tmp
