@@ -6,6 +6,8 @@ import (
 	"testing"
 )
 
+// The TestQuestsBrowseCommand function sets up a sample quest directory, executes a command to browse
+// quests, captures the output, and checks if the output matches the expected value.
 func TestQuestsBrowseCommand(t *testing.T) {
 	// Setup: create a sample quest directory and quest.yaml
 	os.MkdirAll("quests/sample-quest", 0755)

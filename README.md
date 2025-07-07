@@ -5,17 +5,31 @@ LevelUpOps is a CLI-first, cross-platform DevOps learning tool built in Go. Lear
 
 ## Current Status (July 2025)
 
+
 ### Implemented
 - Project structure scaffolded as per architecture
 - Go modules and dependencies set up (Cobra, Logrus, SQLite, Testify)
 - CLI entrypoint (`main.go`) and root command (`levelupops`)
-- `init` command implemented: initializes config and XP store (prints confirmation)
-- Test-driven development (TDD) in place: test for `init` command output
+- Core CLI commands implemented and tested:
+  - `init`: initializes config and XP store
+  - `quests browse`: lists available quests
+  - `start <id>`: starts a specific quest
+  - `progress`: shows XP progress and journal (placeholder)
+  - `cleanup`: removes stale sandboxes/resources (placeholder)
+  - `doctor`: runs diagnostics (placeholder)
+- Test-driven development (TDD) in place: tests for all core commands
 - GitHub Actions CI workflow: runs all tests on push/PR
 
+
 ### Verified
-- `go test ./internal/cmd/...` passes locally and in CI
-- `go run ./cmd/levelupops/main.go init` prints `LevelUpOps initialized!`
+- All core CLI commands pass their tests locally and in CI
+- Example verifications:
+  - `go run ./cmd/levelupops/main.go init` prints `LevelUpOps initialized!`
+  - `go run ./cmd/levelupops/main.go quests browse` lists quest IDs
+  - `go run ./cmd/levelupops/main.go start <id>` prints quest started or not found
+  - `go run ./cmd/levelupops/main.go progress` prints placeholder XP/journal
+  - `go run ./cmd/levelupops/main.go cleanup` prints placeholder cleanup message
+  - `go run ./cmd/levelupops/main.go doctor` prints placeholder diagnostics
 
 ### Next Steps
 - Add more CLI commands: `quests browse`, `start <id>`, etc.

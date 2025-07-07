@@ -1,0 +1,16 @@
+{
+    "docStyle": "godoc",
+    "functionDocumentation": {
+        "includeParams": true,
+        "includeReturns": true,
+        "includeExamples": true
+    },
+    "fileDocumentation": {
+        "includeHeader": true,
+        "headerTemplate": "// Package {{packageName}} provides {{description}} for the LevelUpOps CLI tool.\n"
+    },
+    "languages": [
+        "go"
+    ],
+    "strictMode": true
+}

@@ -1,0 +1,43 @@
+{
+  "name": "LevelUpOps Docs",
+  "version": "1.0.0",
+  "docsPath": ".",
+  "theme": "mint",
+  "colors": {
+    "primary": "#00B894"
+  },
+  "navigation": {
+    "languages": [],
+    "versions": [],
+    "tabs": [],
+    "dropdowns": [],
+    "anchors": [],
+    "groups": [],
+    "pages": [
+      {
+        "title": "Introduction",
+        "path": "/"
+      },
+      {
+        "title": "Getting Started",
+        "path": "/getting-started"
+      },
+      {
+        "title": "CLI Commands",
+        "path": "/cli"
+      },
+      {
+        "title": "Sandboxing",
+        "path": "/sandboxing"
+      },
+      {
+        "title": "XP System",
+        "path": "/xp-system"
+      },
+      {
+        "title": "Contribute",
+        "path": "/contributing"
+      }
+    ]
+  }
+}

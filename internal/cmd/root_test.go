@@ -6,6 +6,8 @@ import (
 	"testing"
 )
 
+// The TestInitCommand function tests the output of the rootCmd when initialized with the "init"
+// command.
 func TestInitCommand(t *testing.T) {
 	// Capture stdout
 	old := os.Stdout
